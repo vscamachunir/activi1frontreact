@@ -1,0 +1,32 @@
+/* ShoppingCart.css */
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cart__item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__item-info {
+    flex: 1;
+}
+
+.cart__item-name {
+    margin: 0;
+}
+
+.cart__item-remove {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

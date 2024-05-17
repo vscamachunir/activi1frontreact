@@ -1,0 +1,29 @@
+.card__title-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.card__description-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border: #353434 solid 1px;
+}
+
+.card_price-big {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: darkblue;
+}
+
+.card__counter {
+    width: 100%;
+    text-align: center;
+}
+
+.counter__number {
+    color: mediumblue;
+}

@@ -1,0 +1,11 @@
+/* Estilos para la sección de bienvenida */
+.inventory {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inventory__tittle {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
