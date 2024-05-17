@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css'; // Importar el archivo CSS
 
-export const Login = () => {
+// Definir un hook personalizado para la autenticación
+const useAuthentication = () => {
     const [credentials, setCredentials] = useState({
         username: '',
         password: '',
@@ -20,6 +21,16 @@ export const Login = () => {
         console.log('Credentials entered:', credentials);
         // Aquí podrías hacer la lógica para autenticar al usuario
     };
+
+    return {
+        credentials,
+        handleChange,
+        handleSubmit,
+    };
+};
+
+export const Login = () => {
+    const { credentials, handleChange, handleSubmit } = useAuthentication();
 
     return (
         <div className="login">
