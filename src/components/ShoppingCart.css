@@ -4,6 +4,7 @@
     padding: 10px;
     max-width: 400px;
     margin: 0 auto;
+    position: relative; /* Establecer posición relativa para posicionar el botón correctamente */
 }
 
 .cart__item {
@@ -29,4 +30,12 @@
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.cart__send-to-provider {
+    /* Estilos para el botón "Send to Provider" */
+    position: absolute; /* Establecer posición absoluta */
+    bottom: 20px; /* Ajustar la distancia desde la parte inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Corregir la posición para centrar correctamente */
 }

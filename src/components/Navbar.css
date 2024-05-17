@@ -1,0 +1,36 @@
+/* Estilos para el navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Estilos para la lista de navegación */
+.navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.navbar__item {
+    margin-right: 15px;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar__link {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar__link:hover {
+    background-color: #f0f0f0;
+}

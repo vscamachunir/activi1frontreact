@@ -20,7 +20,6 @@ export const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('User data entered:', userData);
-        // Aquí podrías hacer la lógica para registrar al usuario
     };
 
     return (

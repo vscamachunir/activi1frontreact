@@ -10,7 +10,7 @@ export const Inventory = () => {
         // Fetch inventory items from API
         getInventoryItems()
             .then(items => setInventoryItems(items))
-            .catch(error => console.error('Error fetching inventory items:', error));
+            .catch(error => console.error('Error obteniendo item del inventario:', error));
     }, []);
 
     return (

@@ -17,6 +17,25 @@ export const ShoppingCart = () => {
         setCartItems(cartItems.filter(item => item.id !== itemId));
     };
 
+    // Función para enviar los datos al proveedor (con datos ficticios)
+    const sendToProvider = () => {
+        // Datos ficticios para enviar al proveedor
+        const dataToSend = {
+            items: cartItems.map(item => ({
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                count: item.count
+            })),
+            total: cartItems.reduce((total, item) => total + (item.price * item.count), 0)
+        };
+
+        // Simulación de envío al proveedor
+        console.log('Sending cart items to provider:', dataToSend);
+
+        // Lógica adicional para enviar los datos al proveedor (puedes usar fetch u otra librería de solicitud HTTP)
+    };
+
     return (
         <div className="cart">
             {cartItems.map(item => (
@@ -29,6 +48,7 @@ export const ShoppingCart = () => {
                     <button className="cart__item-remove" onClick={() => removeFromCart(item.id)}>Eliminar</button>
                 </div>
             ))}
+            <button className="cart__send-to-provider" onClick={sendToProvider}>Enviar al Proveedor</button>
         </div>
     );
 };

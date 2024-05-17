@@ -13,21 +13,25 @@ import { ShoppingCart } from "./components/ShoppingCart";
 export const App = () => {
   return (
       <Router>
-        <div>
-          <Navbar />
           <div className="container">
-            <Routes>
-                <Route exact path="/" element={ <Home/> } />
-                <Route path="/inventory" element={ <Inventory/> } />
-                <Route path="/addstock" element={ <ProductForm/> } />
-                <Route path="/shoppingcart" element={ <ShoppingCart/> } />
-                <Route path="/login" element={ <Login/> } />
-                <Route path="/signup" element={ <SignUp/> } />
-                <Route path="*" element={ <PageNotFound/> } />
-            </Routes>
+              <div className="navbar">
+                  <Navbar/>
+              </div>
+              <div className="content">
+                  <Routes>
+                      <Route exact path="/" element={<Home/>}/>
+                      <Route path="/inventory" element={<Inventory/>}/>
+                      <Route path="/addstock" element={<ProductForm/>}/>
+                      <Route path="/shoppingcart" element={<ShoppingCart/>}/>
+                      <Route path="/login" element={<Login/>}/>
+                      <Route path="/signup" element={<SignUp/>}/>
+                      <Route path="*" element={<PageNotFound/>}/>
+                  </Routes>
+              </div>
+              <div className="footer">
+                  <Footer/>
+              </div>
           </div>
-            <Footer />
-        </div>
       </Router>
   );
 };
