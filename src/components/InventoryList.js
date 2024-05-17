@@ -36,7 +36,7 @@ export const InventoryList = () => {
     return (
         <div>
             {/* Buscador */}
-            <h5>Buscar Producto:</h5>
+            <h5>Search Product:</h5>
             <input
                 type="text"
                 placeholder="Search..."

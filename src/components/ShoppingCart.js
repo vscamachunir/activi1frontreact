@@ -4,12 +4,12 @@ import './ShoppingCart.css'; // Importamos los estilos CSS
 export const ShoppingCart = () => {
     // Estado para almacenar los productos en el carrito
     const [cartItems, setCartItems] = useState([
-        { id: 1, count: 20, name: 'Producto 1', price: 10 },
-        { id: 2, count: 40, name: 'Producto 2', price: 20 },
-        { id: 3, count: 70, name: 'Producto 3', price: 30 },
-        { id: 4, count: 20, name: 'Producto 4', price: 40 },
-        { id: 5, count: 10, name: 'Producto 5', price: 50 },
-        { id: 6, count: 34, name: 'Producto 6', price: 60 },
+        { id: 1, count: 20, name: 'Product 1', price: 10 },
+        { id: 2, count: 40, name: 'Product 2', price: 20 },
+        { id: 3, count: 70, name: 'Product 3', price: 30 },
+        { id: 4, count: 20, name: 'Product 4', price: 40 },
+        { id: 5, count: 10, name: 'Product 5', price: 50 },
+        { id: 6, count: 34, name: 'Product 6', price: 60 },
     ]);
 
     // Función para eliminar un producto del carrito

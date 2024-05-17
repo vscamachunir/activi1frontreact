@@ -7,9 +7,9 @@ export const Footer = () => {
             <div className="footer__content">
                 <div className="footer__contact">
                     <h3 className="footer__heading">Contact Us</h3>
-                    <p>Email: contact@testinventory.com</p>
+                    <p>Email: sebastian@testinventory.com</p>
                     <p>Phone: +57 3652656894</p>
-                    <p>Address: cll 3 cirvunvalar bogota</p>
+                    <p>Address: cll 3 crr 7 bogota</p>
                 </div>
                 <div className="footer__social">
                     <h3 className="footer__heading">Follow Us</h3>
